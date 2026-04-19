@@ -1,18 +1,37 @@
 Bahasa Indonesia 🇮🇩
 
 # Bot-Zaidan
-Bot Ini Di Buat Oleh Orang Indonesia yang bernama Zaidan.
+# 👑 Bot-Zaidan (The Quiz Slayer)
+Proyek bot Minecraft berbasis Node.js yang dikembangkan khusus untuk optimasi kecepatan dan akurasi dalam menjawab kuis server.
+> **Dibuat oleh:** Zaidan (Indonesia)
+> 
+### ⚠️ Disclaimer: Tahap Pengembangan
+Bot ini **BUKAN** versi final. Saat ini masih dalam tahap pengembangan awal (*WIP*), kemungkinan masih terdapat beberapa *bug*, dan performanya mungkin belum stabil di semua lingkungan server. Gunakan dengan bijak!
+### 🛠️ Cara Instalasi & Pengaktifan
+*(Catatan: Proyek ini telah diuji di **Localhost**. Untuk penggunaan di **Pterodactyl Panel**, silakan lakukan penyesuaian konfigurasi.)*
+#### 1. Persiapan Lingkungan
+Pastikan kamu sudah menginstal **Node.js** versi stabil terbaru di sistem kamu.
+#### 2. Instalasi Dependency
+Buka terminal/console kamu, arahkan ke folder proyek, lalu jalankan perintah:
+```bash
+npm install mineflayer mineflayer-tps mineflayer-pathfinder mineflayer-pvp mineflayer-auto-eat
 
-# Bot Ini Bukan Versi Final nya Ini Versi Yang belom terlalu Stabil dan tentu banyak Bugnya
+```
+#### 3. Konfigurasi Otak (Brain)
+ * Cari atau siapkan file kamus bahasa Indonesia (KBBI) dalam format .json atau sesuaikan dengan bahasa yang digunakan oleh server Minecraft tujuan.
+ * Masukkan file tersebut ke folder utama proyek dan ubah namanya menjadi words.json.
+#### 4. Pengaturan Mesin (Main Engine)
+Buka file bot.js dan perhatikan bagian **Main Engine** (biasanya di paragraf/blok kode ketiga). Sesuaikan data berikut:
+ * **Username & Password:** Masukkan akun bot kamu.
+ * **MainAccount:** Nama akun utama kamu (untuk menerima transfer hasil kuis).
+ * **PayAmount & minTransfer:** Atur nominal otomatisasi pembayaran.
+ * **Version:** **Wajib** disesuaikan dengan versi Minecraft server tujuan agar koneksi lancar.
+#### 5. Menjalankan Bot
+Jika semua sudah siap, jalankan bot dengan perintah:
+```bash
+node bot.js
 
-# cara dan Mengaktifkan nya (gw ga tau Ini Work Di Pterodactyl, karena Ini gw pake ke Localhost)
-1. Install NodeJs
-2. Install Dependency npm install mineflayer mineflayer-tps mineflayer-pathfinder mineflayer-pvp mineflayer-auto-eat
-3. Cari .json KBBI / Ikutin bahasa Server Minecraft 
-4. masukan .json Itu Dan ubah namanya jadi words.json
-5. edit File bot.js di Paraf Ke tiga yang merupakan Main Engine
-6. Ubah Username, Password Botnya dan MainAccount /Akun kalian, dan ubah PayAmount, dan minTransfer, dan Ubah Version Usahakan untuk version Ini Dia Tuh Ikutin versi Server
-7. terus Jalankan Dengan cara node bot.js
+```
 
 # Bahasa Inggris 🇬🇧
 
