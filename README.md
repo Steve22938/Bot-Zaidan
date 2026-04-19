@@ -1,4 +1,4 @@
-Bahasa Indonesia 🇮🇩
+# Bahasa Indonesia 🇮🇩
 
 # Bot-Zaidan
 # 👑 Bot-Zaidan (The Quiz Slayer)
